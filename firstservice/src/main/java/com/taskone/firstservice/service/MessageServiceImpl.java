@@ -7,16 +7,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class MessageServiceImpl implements MessageService {
 
-    @Autowired
-    private SecondService secondService;
+  @Autowired private SecondService secondService;
 
-    @Autowired
-    private ThirdService thirdService;
+  @Autowired private ThirdService thirdService;
 
-    @Override
-    public String postMessage(UserInput userInput) {
-        String secondServiceMessage = secondService.getMessage();
-        String thirdServiceMessage = thirdService.postMessage(userInput);
-        return secondServiceMessage + " " + thirdServiceMessage;
-    }
+  @Override
+  public String postMessage(UserInput userInput) {
+    String secondServiceMessage = secondService.getMessage();
+    String thirdServiceMessage = thirdService.postMessage(userInput);
+    return secondServiceMessage + " " + thirdServiceMessage;
+  }
 }

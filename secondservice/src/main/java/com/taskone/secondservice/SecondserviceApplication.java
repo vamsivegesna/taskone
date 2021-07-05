@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SecondserviceApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SecondserviceApplication.class, args);
-	}
-
+  public static void main(String[] args) {
+    SpringApplication.run(SecondserviceApplication.class, args);
+  }
 }

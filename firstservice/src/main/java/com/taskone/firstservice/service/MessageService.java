@@ -4,5 +4,5 @@ import com.taskone.firstservice.dto.UserInput;
 
 public interface MessageService {
 
-    public String postMessage(UserInput userInput);
+  public String postMessage(UserInput userInput);
 }

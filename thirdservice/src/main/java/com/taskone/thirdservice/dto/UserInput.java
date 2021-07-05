@@ -5,6 +5,6 @@ import lombok.Data;
 @Data
 public class UserInput {
 
-    private String name;
-    private String surname;
+  private String name;
+  private String surname;
 }
